@@ -1,0 +1,19 @@
+server:
+  port: 8888  # Default port for Config Server
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/smghodekar19/LibraryManagementConfig.git  # Replace with your Git repo
+          clone-on-start: true
+          default-label: main  # Git branch to use
+  application:
+    name: config-server
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # Enables refresh and health check
