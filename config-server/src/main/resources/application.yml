@@ -6,7 +6,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/smghodekar19/LibraryManagementConfig.git  # Replace with your Git repo
+          uri: https://github.com/smghodekar19/LibraryManagementConfig.git # Replace with your Git repo
           clone-on-start: true
           default-label: main  # Git branch to use
   application:

@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: user-service  # Must match the config file in Git
+  config:
+    import: "optional:configserver:http://localhost:8888"
