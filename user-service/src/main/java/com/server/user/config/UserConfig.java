@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @RefreshScope
 public class UserConfig {
 	
-	@Value("${server.port")
+	@Value("${server.port}")
 	private String port;
 	
 	public String getPort() {
